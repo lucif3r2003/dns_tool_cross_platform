@@ -89,6 +89,7 @@ func getWindowsInterface() (string, error) {
 
 // GetCurrentDNS returns the current IPv4 DNS servers as a string
 func GetCurrentDNS() (string, error) {
+	fmt.Println("Fetching current DNS settings...")
 	switch runtime.GOOS {
 	case "windows":
 		out, err := exec.Command("nslookup").Output()
