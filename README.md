@@ -21,22 +21,23 @@ Supports **Windows** and **Linux** (tested on Ubuntu).
    sudo apt update
    sudo apt install -y libgl1-mesa-dev xorg-dev libxcursor-dev \
    libxrandr-dev libxinerama-dev libxi-dev
-2. Clone and build the project
+2. **Clone and build the project**
     ```bash
     git clone https://github.com/your-username/dns_tool_cross_platform.git
     cd dns_tool_cross_platform
     go mod tidy
     go build -o dns_tool
-3.Run (requires root to change DNS)
-    ```bash
+3. **Run (requires root to change DNS)**
+      ```bash
       sudo ./dns_tool
 
 ### 🔹 Window
 
-1. Install Go from golang.org
-2. . Clone and build the project
+1. **Install Go from golang.org**
+2. **Clone and build the project**
     ```bash
     git clone https://github.com/your-username/dns_tool_cross_platform.git
     cd dns_tool_cross_platform
     go mod tidy
     go build -o dns_tool.exe
+3. **Run as Administrator (required to change DNS)**
